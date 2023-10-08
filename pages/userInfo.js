@@ -6,7 +6,7 @@ var userClass = document.getElementById("userClass")
 var userSection = document.getElementById("userSection")
 var userQuizCode = document.getElementById("userQuizCode")
 
-function userDataGet() {
+window.userDataGet= function() {
   if (
     userName.value !== "" && userFatherName.value !== "" && userClass.value !== "" && userSection.value !== "" && userQuizCode.value !== "") {
     var userinfo = {

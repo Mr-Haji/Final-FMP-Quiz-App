@@ -29,9 +29,48 @@ var questionData = [
     ],
     answer: "HyperText Markup Language",
   },
-console.log
+  {
+    question: "What is the Full Form Of CSS",
+    options: [
+      "HyperText Makeup Language",
+      "HyperText Markup Language",
+      "HyperText Markup Lame",
+      "HyperTate Markup Language",
+    ],
+    answer: "HyperText Markup Language",
+  },
+  {
+    question: "What is the Full Form Of HTML",
+    options: [
+      "HyperText Makeup Language",
+      "HyperText Markup Language",
+      "HyperText Markup Lame",
+      "HyperTate Markup Language",
+    ],
+    answer: "HyperText Markup Language",
+  },
+  {
+    question: "What is the Full Form Of HTML",
+    options: [
+      "HyperText Makeup Language",
+      "HyperText Markup Language",
+      "HyperText Markup Lame",
+      "HyperTate Markup Language",
+    ],
+    answer: "HyperText Markup Language",
+  },
+  {
+    question: "What is the Full Form Of HTML",
+    options: [
+      "HyperText Makeup Language",
+      "HyperText Markup Language",
+      "HyperText Markup Lame",
+      "HyperTate Markup Language",
+    ],
+    answer: "HyperText Markup Language",
+  },
 
-  
+
 
 ];
 // question 
@@ -99,31 +138,30 @@ window.renderQuestion = function () {
 renderQuestion()
 
 window.result = function () {
-
+  var marks = document.getElementById("marks")
   window.location.replace("../pages/result.html")
-  obtScore.innerHTML = `
-  <div class="card bg-info  text-center" >
+
+  marks.innerHTML = `<div class="card bg-info  text-center" >
               <div class="mt-3">
                   <h1>Result</h1>
               </div>
-              
-              <hr />
-              <div >
-                  <h3>Your Right Clicks Are  <hr />
-                    ${score} Out Of 5</h3>
-              </div>
-              <div >
-                  <h3>And You Get: ${score / questionData.length * 100} %</h3>
-                  </div>
-                  <hr />
+  //             <hr />
+  //             <div >
+  //                 <h3>Your Right Clicks Are  <hr />
+  //                   ${score} Out Of 5</h3>
+  //             </div>
+  //             <div >
+  //                 <h3>And You Get: ${score / questionData.length * 100} %</h3>
+  //                 </div>
+  //                 <hr />
   
-                  <div >
-                  <h3>Better Luck For The Next Time 🎉</h3>
+  //                 <div >
+  //                 <h3>Better Luck For The Next Time 🎉</h3>
                   
-              </div>
+  //             </div>
   
           
-          </div>`
+  //         </div>`
 }
 // next question 
 window.next = function () {
